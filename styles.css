@@ -1,0 +1,702 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    background-image: url('img/pexels-kawserhamid-176342.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+header .logo-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Updated color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #4682B4; /* Hover effect for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* About Section Styling */
+.about-section {
+    background: linear-gradient(135deg, #f4f4f4, #eaeaea);
+    color: #333;
+    padding: 60px 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #4682B4;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Mission, Vision, and Why Choose Us */
+.values {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.value-item {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.value-item i {
+    font-size: 2.5em;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.value-item h3 {
+    font-size: 1.8em;
+    color: #4682B4;
+    margin-bottom: 10px;
+}
+
+.why-choose-us {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4682B4;
+}
+
+.why-choose-us ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.why-choose-us ul li i {
+    font-size: 1.5em;
+    color: #ff9900;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.why-choose-us ul li strong {
+    color: #4682B4;
+}
+
+
+/* Services Section Styling with Enhancements */
+.services-section {
+    background: linear-gradient(135deg, #2e2e2e, #1a1a1a); /* Gradient Background for Depth */
+    color: #ffcc00;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffcc00;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adding letter spacing for elegance */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Space between cards */
+}
+
+.service-item {
+    width: 45%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #4682B4; /* Steel Blue Accent Border */
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Lifting card on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.service-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover img {
+    transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+.service-text {
+    flex: 1;
+    text-align: left;
+    color: #333;
+}
+
+.service-text h3 {
+    font-size: 1.8em;
+    color: #4682B4;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.service-text h3:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ffcc00; /* Yellow Accent Underline */
+    margin-top: 5px;
+}
+
+.service-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666; /* Softer text for the paragraphs */
+}
+
+.service-text p:hover {
+    color: #333; /* Darker text on hover */
+}
+
+/* Hidden Services Styling */
+.hidden-content {
+    display: none;
+    margin-top: 20px; /* Add space above hidden content */
+}
+
+/* Toggle Button Styling */
+.toggle-button {
+    display: inline-block; /* Ensure it is displayed */
+    background-color: #4682B4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.toggle-button:hover {
+    background-color: #2a5f8a;
+}
+
+.plus, .minus {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+  
+.portfolio-section h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #4682B4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 45%;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+
+/* Site Photos Section Styling */
+.site-photos-section {
+    background-color: #333;
+    color: #f8f8f8;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+
+.site-photos-section h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #4682B4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.site-photos-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #f8f8f8;
+}
+
+.site-photos-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-photo-item {
+    width: 45%;
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.site-photo-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.site-photo-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.site-photo-item:hover .photo-caption {
+    opacity: 1; /* Show caption on hover */
+}
+
+.photo-caption h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+/* Directorates Section Styling */
+.directorates-section {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.directorates-section h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #4682B4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.directorates-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.directorates-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.directorate-item {
+    width: 45%;
+    background-color: #333; /* Black background for the cards */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff; /* White text inside the cards */
+}
+
+.directorate-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.directorate-item i {
+    font-size: 3em;
+    color: #ffcc00; /* Yellow icons for contrast */
+    margin-bottom: 20px;
+}
+
+.directorate-item h3 {
+    font-size: 1.8em;
+    color: #ffcc00; /* Yellow headings for contrast */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.directorate-item p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.directorate-item ul {
+    padding-left: 20px;
+}
+
+.directorate-item ul li {
+    font-size: 1.1em;
+    color: #fff; /* White text for list items */
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    color: #4682B4; /* Color of the icons */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900; /* Hover color for the icons */
+}
+
+.social-icons i {
+    font-size: 2em;
+}
+
+
+/* Scroll to Top Button Styling */
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #000; /* Black button to match the theme */
+    color: #ffcc00; /* Yellow icon for contrast */
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.scroll-to-top:hover {
+    background-color: #333; /* Darker on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.scroll-to-top i {
+    font-size: 1.5em;
+}
+
+.scroll-to-top.visible {
+    display: block; /* Show button when scrolled */
+}
+
+
+
+/* Footer */
+.thod {
+    color:#4682B4;
+
+}
+.thod a:hover {
+    color: #ff9900; /* Hover color for the link*/
+}
+footer {
+    background-color: #333;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+/* Responsive Styling for Smaller Devices */
+@media (max-width: 768px) {
+    /* General Section Adjustments */
+    .section {
+        padding: 40px 10px;
+    }
+
+    /* Header - Mobile */
+    header nav ul {
+        display: block; /* Stack nav items vertically */
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 15px; /* Add space between links */
+    }
+
+    header nav ul li a {
+        font-size: 1.1em; /* Slightly smaller font size for mobile */
+    }
+
+    /* Typography Adjustments */
+    h1, h2, h3 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    /* About Section - Mobile */
+    .about-section {
+        padding: 20px;
+    }
+
+    .values, .why-choose-us {
+        padding: 20px;
+    }
+
+    /* Services Section - Mobile */
+    .services-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 20px;
+    }
+
+    /* Directorates Section - Mobile */
+    .directorates-gallery {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 20px;
+    }
+
+    /* Portfolio Section - Mobile */
+    .portfolio-gallery {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 20px;
+    }
+
+    /* Buttons and Call to Action - Mobile */
+    .button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    /* Footer - Mobile */
+    footer {
+        padding: 20px;
+    }
+
+    /* Scroll-to-Top Button */
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+    }
+
+    .scroll-to-top i {
+        font-size: 1.2em;
+    }
+}
+
+/* Extra Small Screens (less than 600px) */
+@media (max-width: 600px) {
+    /* Header - Extra Small */
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    /* Typography Adjustments */
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Buttons - Extra Small */
+    .button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    /* Scroll-to-Top Button - Extra Small */
+    .scroll-to-top {
+        padding: 8px;
+    }
+
+    .scroll-to-top i {
+        font-size: 1em;
+    }
+}
